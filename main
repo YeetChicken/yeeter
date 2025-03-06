@@ -1,0 +1,6 @@
+<!DOCTYPE html> 
+<html> <head> <title>Yeet Chicken</title> 
+<style> #myImage { cursor: pointer; /* Change cursor to pointer on hover */ } </style> </head> <body>
+
+<img id="myImage" src="https://pbs.twimg.com/media/GlZIhStXwAAuut7?format=png&name=small" alt="Clickable Image" width="300"> 
+<p>Chickens YEETed: <span id="clickCount">0</span></p> <script> let count = 0; const image = document.getElementById('myImage'); const displayCount = document.getElementById('clickCount'); image.addEventListener('click', function() { count++; displayCount.textContent = count; }); </script> </body> </html>
